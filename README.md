@@ -46,14 +46,14 @@ The following is the above introduction translated to braille:
     - The characters that are trimmed off are called "shavings".
         - Example: In the word "!where?", the shavings are "!?" and the trimmed word is "where".
 5. Build the translation.
-    a) Check to see if the trimmed word can be contracted.
+    1. Check to see if the trimmed word can be contracted.
         - This includes common words like "the", "in", "you" etc...
-    b) Translate the remaining characters that are still alphabetic.
-    c) Translate the shavings (this will mostly just be punctuation).
+    2. Translate the remaining characters that are still alphabetic.
+    3. Translate the shavings (this will mostly just be punctuation).
         - Exceptions to be mindful of:
             - There is no braille symbol for a generic quote (")
             - There is only open quotation (“) and closed quotation (”).
-            - Therefore we must keep track of what the last quotation was to convert it correctly.
+            - Therefore we must keep track of what the last quotation was to translate it correctly.
 
 ## Disclaimer
 Creating a perfect braille translation can only be done by a human as it requires an understanding of the content at hand. Also, many braille contractions follow pronunciation so programming this can be quite tricky. For instance, the “th” contraction that is used in “thought” would not be used in “pothole”.
