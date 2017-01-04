@@ -1,6 +1,11 @@
 # Braille-Translator
 Translating text to Grade 2 Braille is a non-trivial task since it is not just a variant of the alphabet, it is an independent writing system. Iterating over a string and translating it one character at a time will not yield correct results for Grade 2 Braille. Many braille symbols have multiple meanings and this can lead to ambiguities. Furthermore, certain words and letters that are commonly seen in the English language can be represented by fewer braille symbols than there are letters (these are called contractions). The algorithm used in this software is summarized below.
 
+## Sample
+The following is the above introduction translated to braille:
+
+⠠⠞⠗⠁⠝⠎⠇⠁⠞⠊⠝⠛ ⠞⠑⠭⠞ ⠖ ⠠⠛⠗⠁⠙⠑ ⠼⠃ ⠠⠃⠗⠁⠊⠇⠇⠑ ⠊⠎ ⠁ ⠝⠕⠝⠤⠞⠗⠊⠧⠊⠁⠇ ⠞⠁⠎⠅ ⠎⠊⠝⠉⠑ ⠭ ⠊⠎ ⠝ ⠚ ⠁ ⠧⠁⠗⠊⠁⠝⠞ ⠷ ⠮ ⠁⠇⠏⠓⠁⠃⠑⠞⠂ ⠭ ⠊⠎ ⠁⠝ ⠊⠝⠙⠑⠏⠑⠝⠙⠑⠝⠞ ⠺⠗⠊⠞⠊⠝⠛ ⠎⠽⠎⠞⠑⠍⠲ ⠠⠊⠞⠑⠗⠁⠞⠊⠝⠛ ⠕⠧⠑⠗ ⠁ ⠎⠞⠗⠊⠝⠛ ⠯ ⠞⠗⠁⠝⠎⠇⠁⠞⠊⠝⠛ ⠭ ⠕⠝⠑ ⠉⠓⠁⠗⠁⠉⠞⠑⠗ ⠁⠞ ⠁ ⠞⠊⠍⠑ ⠺ ⠝ ⠽⠊⠑⠇⠙ ⠉⠕⠗⠗⠑⠉⠞ ⠗⠑⠎⠥⠇⠞⠎ ⠿ ⠠⠛⠗⠁⠙⠑ ⠼⠃ ⠠⠃⠗⠁⠊⠇⠇⠑⠲ ⠠⠍⠁⠝⠽ ⠃⠗⠁⠊⠇⠇⠑ ⠎⠽⠍⠃⠕⠇⠎ ⠓ ⠍⠥⠇⠞⠊⠏⠇⠑ ⠍⠑⠁⠝⠊⠝⠛⠎ ⠯ ⠞⠓⠊⠎ ⠉ ⠇⠑⠁⠙ ⠖ ⠁⠍⠃⠊⠛⠥⠊⠞⠊⠑⠎⠲ ⠠⠋⠥⠗⠞⠓⠑⠗⠍⠕⠗⠑⠂ ⠉⠑⠗⠞⠁⠊⠝ ⠺⠕⠗⠙⠎ ⠯ ⠇⠑⠞⠞⠑⠗⠎ ⠞ ⠁⠗⠑ ⠉⠕⠍⠍⠕⠝⠇⠽ ⠎⠑⠑⠝ ⠔ ⠮ ⠠⠑⠝⠛⠇⠊⠎⠓ ⠇⠁⠝⠛⠥⠁⠛⠑ ⠉ ⠃⠑ ⠗⠑⠏⠗⠑⠎⠑⠝⠞⠑⠙ ⠃⠽ ⠋⠑⠺⠑⠗ ⠃⠗⠁⠊⠇⠇⠑ ⠎⠽⠍⠃⠕⠇⠎ ⠞⠓⠁⠝ ⠞⠓⠑⠗⠑ ⠁⠗⠑ ⠇⠑⠞⠞⠑⠗⠎ ⠶⠞⠓⠑⠎⠑ ⠁⠗⠑ ⠉⠁⠇⠇⠑⠙ ⠉⠕⠝⠞⠗⠁⠉⠞⠊⠕⠝⠎⠶⠲ ⠠⠮ ⠁⠇⠛⠕⠗⠊⠞⠓⠍ ⠥⠎⠑⠙ ⠔ ⠞⠓⠊⠎ ⠎⠕⠋⠞⠺⠁⠗⠑ ⠊⠎ ⠎⠥⠍⠍⠁⠗⠊⠵⠑⠙ ⠃⠑⠇⠕⠺⠲
+
 ## Usage
 ```
 
@@ -15,12 +20,6 @@ Usage:
         -map     | --m      print translation map
 
 ```
-
-## Sample
-The following is the above introduction translated to braille:
-
-⠠⠞⠗⠁⠝⠎⠇⠁⠞⠊⠝⠛ ⠞⠑⠭⠞ ⠖ ⠠⠛⠗⠁⠙⠑ ⠼⠃ ⠠⠃⠗⠁⠊⠇⠇⠑ ⠊⠎ ⠁ ⠝⠕⠝⠤⠞⠗⠊⠧⠊⠁⠇ ⠞⠁⠎⠅ ⠎⠊⠝⠉⠑ ⠭ ⠊⠎ ⠝ ⠚ ⠁ ⠧⠁⠗⠊⠁⠝⠞ ⠷ ⠮ ⠁⠇⠏⠓⠁⠃⠑⠞⠂ ⠭ ⠊⠎ ⠁⠝ ⠊⠝⠙⠑⠏⠑⠝⠙⠑⠝⠞ ⠺⠗⠊⠞⠊⠝⠛ ⠎⠽⠎⠞⠑⠍⠲ ⠠⠊⠞⠑⠗⠁⠞⠊⠝⠛ ⠕⠧⠑⠗ ⠁ ⠎⠞⠗⠊⠝⠛ ⠯ ⠞⠗⠁⠝⠎⠇⠁⠞⠊⠝⠛ ⠭ ⠕⠝⠑ ⠉⠓⠁⠗⠁⠉⠞⠑⠗ ⠁⠞ ⠁ ⠞⠊⠍⠑ ⠺ ⠝ ⠽⠊⠑⠇⠙ ⠉⠕⠗⠗⠑⠉⠞ ⠗⠑⠎⠥⠇⠞⠎ ⠿ ⠠⠛⠗⠁⠙⠑ ⠼⠃ ⠠⠃⠗⠁⠊⠇⠇⠑⠲ ⠠⠍⠁⠝⠽ ⠃⠗⠁⠊⠇⠇⠑ ⠎⠽⠍⠃⠕⠇⠎ ⠓ ⠍⠥⠇⠞⠊⠏⠇⠑ ⠍⠑⠁⠝⠊⠝⠛⠎ ⠯ ⠞⠓⠊⠎ ⠉ ⠇⠑⠁⠙ ⠖ ⠁⠍⠃⠊⠛⠥⠊⠞⠊⠑⠎⠲ ⠠⠋⠥⠗⠞⠓⠑⠗⠍⠕⠗⠑⠂ ⠉⠑⠗⠞⠁⠊⠝ ⠺⠕⠗⠙⠎ ⠯ ⠇⠑⠞⠞⠑⠗⠎ ⠞ ⠁⠗⠑ ⠉⠕⠍⠍⠕⠝⠇⠽ ⠎⠑⠑⠝ ⠔ ⠮ ⠠⠑⠝⠛⠇⠊⠎⠓ ⠇⠁⠝⠛⠥⠁⠛⠑ ⠉ ⠃⠑ ⠗⠑⠏⠗⠑⠎⠑⠝⠞⠑⠙ ⠃⠽ ⠋⠑⠺⠑⠗ ⠃⠗⠁⠊⠇⠇⠑ ⠎⠽⠍⠃⠕⠇⠎ ⠞⠓⠁⠝ ⠞⠓⠑⠗⠑ ⠁⠗⠑ ⠇⠑⠞⠞⠑⠗⠎ ⠶⠞⠓⠑⠎⠑ ⠁⠗⠑ ⠉⠁⠇⠇⠑⠙ ⠉⠕⠝⠞⠗⠁⠉⠞⠊⠕⠝⠎⠶⠲ ⠠⠮ ⠁⠇⠛⠕⠗⠊⠞⠓⠍ ⠥⠎⠑⠙ ⠔ ⠞⠓⠊⠎ ⠎⠕⠋⠞⠺⠁⠗⠑ ⠊⠎ ⠎⠥⠍⠍⠁⠗⠊⠵⠑⠙ ⠃⠑⠇⠕⠺⠲
-
 
 ## The Algorithm for Translating Alphabet Based Text to Grade 2 Braille:
 1. Split up the text into words by dividing them based on whitespace characters.
